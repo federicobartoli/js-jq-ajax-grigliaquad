@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-     var numeroUtente = parseInt(prompt('Inserisci un numero da 0 a 9'));
+     // var numeroUtente = parseInt(prompt('Inserisci un numero da 0 a 9'));
 
 $.ajax({
      url: 'https://flynn.boolean.careers/exercises/api/random/int',
