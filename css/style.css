@@ -28,3 +28,10 @@
      cursor: pointer;
      margin: 3px;
 }
+
+.yellow {
+     background-color: yellow;
+}
+.green {
+     background-color: green;
+}
