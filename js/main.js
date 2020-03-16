@@ -9,6 +9,7 @@ $(document).ready(function () {
 $('.square').click(function(){
      var these = $(this);
      console.log(these); //DEBUG
+     $(these).removeClass('yellow green');
      $.ajax({
           url: 'https://flynn.boolean.careers/exercises/api/random/int',
           method: 'GET',
