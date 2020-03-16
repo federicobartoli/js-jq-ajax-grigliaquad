@@ -8,17 +8,19 @@ $(document).ready(function () {
 
 $('.square').click(function(){
      var these = $(this);
-     console.log(these);
+     console.log(these); //DEBUG
      $.ajax({
           url: 'https://flynn.boolean.careers/exercises/api/random/int',
           method: 'GET',
           success: function(data) {
                var numeroPC = data.response;
-               console.log(numeroPC);
+               console.log(numeroPC); //DEBUG
                if(numeroPC <= 5) {
                     $(these).addClass('yellow');
+                    $(these).children('p').text(numeroPC);
                } else if(numeroPC > 5) {
                     $(these).addClass('green');
+                    $(these).children('p').text(numeroPC);
                }
           },
           error: function(){
